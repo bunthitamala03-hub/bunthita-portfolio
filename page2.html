@@ -1,91 +1,109 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <title>ประวัติส่วนตัว</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f6f0ff;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>คำนำ</title>
 
-        header {
-            background-color: #6a1b9a;
-            color: white;
-            padding: 20px;
-        }
+<style>
+body{
+margin:0;
+font-family:"TH Sarabun New",sans-serif;
+background:linear-gradient(to bottom,#fff7f2,#ffe6d5);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
 
-        nav {
-            background-color: #ab47bc;
-            padding: 10px;
-        }
+.container{
+width:100%;
+max-width:430px;
+height:100vh;
+background:white;
+display:flex;
+flex-direction:column;
+padding:25px;
+box-sizing:border-box;
+border-top:15px solid #f37021;
+overflow-y:auto;
+}
 
-        nav a {
-            color: white;
-            margin: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+h1{
+color:#f37021;
+text-align:center;
+margin-bottom:15px;
+}
 
-        section {
-            padding: 40px;
-        }
+h2{
+color:#f37021;
+margin-top:20px;
+border-bottom:2px solid #f37021;
+padding-bottom:5px;
+}
 
-        .box {
-            background-color: white;
-            padding: 20px;
-            margin: auto;
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+p{
+color:#333;
+line-height:1.6;
+}
 
-        footer {
-            background-color: #6a1b9a;
-            color: white;
-            padding: 10px;
-            margin-top: 30px;
-        }
-    </style>
+ol{
+padding-left:20px;
+line-height:1.8;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+margin-top:auto;
+padding-top:20px;
+}
+
+.nav a{
+background:#f37021;
+color:white;
+padding:8px 14px;
+border-radius:20px;
+text-decoration:none;
+font-size:14px;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1>ประวัติส่วนตัว</h1>
-</header>
+<div class="container">
 
-<nav>
-    <a href="index.html">หน้าแรก</a>
-    <a href="page2.html">ประวัติส่วนตัว</a>
-    <a href="page3.html">ประวัติการศึกษา</a>
-    <a href="page4.html">ผลการเรียน</a>
-    <a href="page5.html">ผลงาน</a>
-    <a href="page6.html">กิจกรรม</a>
-    <a href="page7.html">จิตอาสา</a>
-    <a href="page8.html">เหตุผลที่อยากเรียน</a>
-    <a href="page9.html">แรงบันดาลใจ</a>
-    <a href="page10.html">ภาคผนวก</a>
-</nav>
+<h1>คำนำ</h1>
 
-<section>
-    <div class="box">
-        <h2>ข้อมูลส่วนตัว</h2>
-        <p>ชื่อ-นามสกุล:นางสาวบัณฑิตา มาลา</p>
-        <p> </p>ชื่อเล่น:บัน
-        <p>วันเกิด: 03พฤษภาคม 2552</p>
-        <p>อายุ:-</p>
-        <p>ที่อยู่:51หมู่8ตำบลดอนมดเเดง อำเภอดอนมดเเดง จังหวัดอุบลราชธานี </p>
-        <p>งานอดิเรก: ชอบฟังเพลง</p>
-        <p>คติประจำใจ:อย่าหยุดเดิน เพียงเพราะกลัวว่าจะไปไม่ถึง </p>
-    </div>
-</section>
+<p>
+แฟ้มสะสมผลงานฉบับนี้จัดทำขึ้นเพื่อใช้ประกอบการสมัครเข้าศึกษา
+คณะพยาบาลศาสตร์ มหาวิทยาลัยเชียงใหม่ ปีการศึกษา 2571
+โดยรวบรวมประวัติส่วนตัว ผลการเรียน กิจกรรม และผลงานต่าง ๆ
+ที่สะท้อนถึงความตั้งใจและความพร้อมในการศึกษาต่อด้านพยาบาลศาสตร์
+</p>
 
-<footer>
-    © 2571 พอร์ตโฟลิโอของฉัน
-</footer>
+<h2>สารบัญ</h2>
+
+<ol>
+<li>หน้าปก</li>
+<li>คำนำ</li>
+<li>ประวัติส่วนตัว</li>
+<li>ประวัติการศึกษา</li>
+<li>ผลการเรียน</li>
+<li>ผลงานวิชาการ</li>
+<li>กิจกรรม</li>
+<li>จิตอาสา</li>
+<li>เหตุผลที่อยากเรียน</li>
+<li>ภาคผนวก</li>
+</ol>
+
+<div class="nav">
+<a href="index.html">⬅ กลับ</a>
+<a href="page3.html">ถัดไป ➜</a>
+</div>
+
+</div>
 
 </body>
 </html>

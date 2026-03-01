@@ -1,132 +1,110 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <title>กิจกรรม</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f6f0ff;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ผลงานวิชาการ</title>
 
-        header {
-            background-color: #6a1b9a;
-            color: white;
-            padding: 20px;
-        }
-
-        nav {
-            background-color: #ab47bc;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            margin: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 40px;
-        }
-
-        .box {
-            background-color: white;
-            padding: 20px;
-            margin: auto;
-            width: 90%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        textarea {
-            width: 80%;
-            height: 80px;
-            margin-top: 20px;
-            padding: 10px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-        }
-
-        .gallery {
-            margin-top: 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-        }
-
-        .gallery img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        footer {
-            background-color: #6a1b9a;
-            color: white;
-            padding: 10px;
-            margin-top: 30px;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>กิจกรรม</h1>
-</header>
-
-<nav>
-    <a href="index.html">หน้าแรก</a>
-    <a href="page2.html">ประวัติส่วนตัว</a>
-    <a href="page3.html">ประวัติการศึกษา</a>
-    <a href="page4.html">ผลการเรียน</a>
-    <a href="page5.html">ผลงาน</a>
-    <a href="page6.html">กิจกรรม</a>
-    <a href="page7.html">จิตอาสา</a>
-    <a href="page8.html">เหตุผลที่อยากเรียน</a>
-    <a href="page9.html">แรงบันดาลใจ</a>
-    <a href="page10.html">ภาคผนวก</a>
-</nav>
-
-<section>
-    <div class="box">
-        <h2>กิจกรรมที่เข้าร่วม</h2>
-
-        <input type="file" accept="image/*" multiple onchange="previewImages(event)">
-
-        <div class="gallery" id="gallery"></div>
-
-        <h3>คำบรรยายกิจกรรม</h3>
-        <textarea placeholder="พิมพ์รายละเอียดกิจกรรมที่นี่..."></textarea>
-
-    </div>
-</section>
-
-<footer>
-    © 2571 พอร์ตโฟลิโอของฉัน
-</footer>
-
-<script>
-function previewImages(event) {
-    const gallery = document.getElementById('gallery');
-    gallery.innerHTML = "";
-
-    const files = event.target.files;
-
-    for (let i = 0; i < files.length; i++) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            const img = document.createElement("img");
-            img.src = e.target.result;
-            gallery.appendChild(img);
-        }
-        reader.readAsDataURL(files[i]);
-    }
+<style>
+body{
+margin:0;
+font-family:"TH Sarabun New",sans-serif;
+background:linear-gradient(to bottom,#fff7f2,#ffe6d5);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
 }
-</script>
 
+.container{
+width:100%;
+max-width:430px;
+height:100vh;
+background:white;
+display:flex;
+flex-direction:column;
+padding:20px;
+box-sizing:border-box;
+border-top:15px solid #f37021;
+overflow-y:auto;
+}
+
+h1{
+color:#f37021;
+text-align:center;
+margin-bottom:20px;
+}
+
+.card{
+border:2px solid #f37021;
+border-radius:12px;
+padding:15px;
+margin-bottom:20px;
+}
+
+.image-box{
+width:100%;
+height:150px;
+background:#ffe6d5;
+border-radius:10px;
+display:flex;
+justify-content:center;
+align-items:center;
+color:#f37021;
+font-size:16px;
+margin-bottom:10px;
+}
+
+.caption{
+font-size:16px;
+line-height:1.6;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+margin-top:auto;
+}
+
+.nav a{
+background:#f37021;
+color:white;
+padding:8px 14px;
+border-radius:20px;
+text-decoration:none;
+font-size:14px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>ผลงานวิชาการ</h1>
+
+<div class="card">
+<div class="image-box">ใส่รูปผลงานที่นี่</div>
+<div class="caption">
+<b>ชื่อผลงาน :</b> ...............................................<br>
+<b>รายละเอียด :</b> ...............................................<br>
+<b>ปีที่ทำ :</b> ...............................................
+</div>
+</div>
+
+<div class="card">
+<div class="image-box">ใส่รูปผลงานที่นี่</div>
+<div class="caption">
+<b>ชื่อผลงาน :</b> ...............................................<br>
+<b>รายละเอียด :</b> ...............................................<br>
+<b>ปีที่ทำ :</b> ...............................................
+</div>
+</div>
+
+<div class="nav">
+<a href="page5.html">⬅ กลับ</a>
+<a href="page7.html">ถัดไป ➜</a>
+</div>
+
+</div>
 </body>
 </html>

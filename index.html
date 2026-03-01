@@ -1,88 +1,100 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <title>พอร์ตโฟลิโอของฉัน</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f6f0ff;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Nursing CMU</title>
 
-        header {
-            background-color: #6a1b9a;
-            color: white;
-            padding: 20px;
-        }
+<style>
+body{
+margin:0;
+font-family:"TH Sarabun New",sans-serif;
+background:linear-gradient(to bottom,#fff7f2,#ffe6d5);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
 
-        nav {
-            background-color: #ab47bc;
-            padding: 10px;
-        }
+.container{
+width:100%;
+max-width:430px;   /* ขนาดประมาณมือถือ */
+height:100vh;
+background:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+box-sizing:border-box;
+border-top:15px solid #f37021;
+}
 
-        nav a {
-            color: white;
-            margin: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+.logos{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-bottom:30px;
+}
 
-        section {
-            padding: 40px;
-        }
+.logos img{
+height:80px;
+}
 
-        .box {
-            background-color: white;
-            padding: 20px;
-            margin: auto;
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+h1{
+color:#f37021;
+font-size:36px;
+margin-bottom:10px;
+}
 
-        footer {
-            background-color: #6a1b9a;
-            color: white;
-            padding: 10px;
-            margin-top: 30px;
-        }
-    </style>
+h2{
+margin:3px 0;
+color:#333;
+}
+
+.name{
+margin-top:25px;
+font-size:24px;
+font-weight:bold;
+color:#f37021;
+}
+
+.year{
+margin-top:5px;
+color:#666;
+}
+
+.btn{
+margin-top:40px;
+background:#f37021;
+color:white;
+padding:10px 20px;
+border-radius:25px;
+text-decoration:none;
+font-size:16px;
+}
+
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1>พอร์ตโฟลิโอ</h1>
-    <p>คณะพยาบาลศาสตร์ มหาวิทยาลัยเชียงใหม่</p>
-</header>
+<div class="container">
 
-<nav>
-    <a href="index.html">หน้าแรก</a>
-    <a href="page2.html">ประวัติส่วนตัว</a>
-    <a href="page3.html">ประวัติการศึกษา</a>
-    <a href="page4.html">ผลการเรียน</a>
-    <a href="page5.html">ผลงาน</a>
-    <a href="page6.html">กิจกรรม</a>
-    <a href="page7.html">จิตอาสา</a>
-    <a href="page8.html">เหตุผลที่อยากเรียน</a>
-    <a href="page9.html">แรงบันดาลใจ</a>
-    <a href="page10.html">ภาคผนวก</a>
-</nav>
+<div class="logos">
+</div>
 
-<section>
-    <div class="box">
-        <h2>แนะนำตัว</h2>
-        <p>นางสาวบัณฑิตา มาลา</p>
-        <p>โรงเรียนนารีนุกูล</p>
-        <p>ความใฝ่ฝัน: อยากเป็นพยาบาลที่ดีและช่วยเหลือผู้อื่น</p>
-    </div>
-</section>
+<h1>PORTFOLIO</h1>
+<h2>คณะพยาบาลศาสตร์</h2>
+<h2>มหาวิทยาลัยเชียงใหม่</h2>
 
-<footer>
-    © 2571พอร์ตโฟลิโอของฉัน
-</footer>
+<div class="name">นางสาวบัณฑิตา มาลา</div>
+<div class="year">ยื่นปีการศึกษา 2571</div>
+
+<a href="page2.html" class="btn">เข้าสู่พอร์ต ➜</a>
+
+</div>
 
 </body>
 </html>

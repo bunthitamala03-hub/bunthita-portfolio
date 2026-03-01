@@ -1,129 +1,110 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <title>ผลการเรียน</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f6f0ff;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ประวัติการศึกษา</title>
 
-        header {
-            background-color: #6a1b9a;
-            color: white;
-            padding: 20px;
-        }
+<style>
+body{
+margin:0;
+font-family:"TH Sarabun New",sans-serif;
+background:linear-gradient(to bottom,#fff7f2,#ffe6d5);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
 
-        nav {
-            background-color: #ab47bc;
-            padding: 10px;
-        }
+.container{
+width:100%;
+max-width:430px;
+height:100vh;
+background:white;
+display:flex;
+flex-direction:column;
+padding:25px;
+box-sizing:border-box;
+border-top:15px solid #f37021;
+overflow-y:auto;
+}
 
-        nav a {
-            color: white;
-            margin: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+h1{
+color:#f37021;
+text-align:center;
+margin-bottom:25px;
+}
 
-        section {
-            padding: 40px;
-        }
+.timeline{
+border-left:4px solid #f37021;
+padding-left:15px;
+}
 
-        .box {
-            background-color: white;
-            padding: 20px;
-            margin: auto;
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+.item{
+margin-bottom:25px;
+}
 
-        table {
-            margin: auto;
-            border-collapse: collapse;
-            width: 80%;
-        }
+.level{
+color:#f37021;
+font-weight:bold;
+font-size:20px;
+}
 
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
+.school{
+font-size:18px;
+color:#333;
+margin-top:5px;
+}
 
-        th {
-            background-color: #e1bee7;
-        }
+.nav{
+display:flex;
+justify-content:space-between;
+margin-top:auto;
+padding-top:20px;
+}
 
-        footer {
-            background-color: #6a1b9a;
-            color: white;
-            padding: 10px;
-            margin-top: 30px;
-        }
-    </style>
+.nav a{
+background:#f37021;
+color:white;
+padding:8px 14px;
+border-radius:20px;
+text-decoration:none;
+font-size:14px;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1>ผลการเรียน</h1>
-</header>
+<div class="container">
 
-<nav>
-    <a href="index.html">หน้าแรก</a>
-    <a href="page2.html">ประวัติส่วนตัว</a>
-    <a href="page3.html">ประวัติการศึกษา</a>
-    <a href="page4.html">ผลการเรียน</a>
-    <a href="page5.html">ผลงาน</a>
-    <a href="page6.html">กิจกรรม</a>
-    <a href="page7.html">จิตอาสา</a>
-    <a href="page8.html">เหตุผลที่อยากเรียน</a>
-    <a href="page9.html">แรงบันดาลใจ</a>
-    <a href="page10.html">ภาคผนวก</a>
-</nav>
+<h1>ประวัติการศึกษา</h1>
 
-<section>
-    <div class="box">
-        <h2>ผลการเรียน 5 ภาคเรียน</h2>
+<div class="timeline">
 
-        <table>
-            <tr>
-                <th>ระดับชั้น</th>
-                <th>GPA</th>
-            </tr>
-            <tr>
-                <td>ม.4 เทอม 1</td>
-                <td>3.82</td>
-            </tr>
-            <tr>
-                <td>ม.4 เทอม 2</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td>ม.5 เทอม 1</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td>ม.5 เทอม 2</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td>ม.6 เทอม 1</td>
-                <td>-</td>
-            </tr>
-        </table>
+<div class="item">
+<div class="level">ระดับประถมศึกษา</div>
+<div class="school">โรงเรียนบ้านวังพระวังไฮ</div>
+</div>
 
-        <h3>GPA เฉลี่ยรวม: -</h3>
+<div class="item">
+<div class="level">ระดับมัธยมศึกษาตอนต้น</div>
+<div class="school">โรงเรียนนารีนุกูล</div>
+</div>
 
-    </div>
-</section>
+<div class="item">
+<div class="level">ระดับมัธยมศึกษาตอนปลาย</div>
+<div class="school">โรงเรียนนารีนุกูล</div>
+</div>
 
-<footer>
-    © 2571 พอร์ตโฟลิโอของฉัน
-</footer>
+</div>
+
+<div class="nav">
+<a href="page3.html">⬅ กลับ</a>
+<a href="page5.html">ถัดไป ➜</a>
+</div>
+
+</div>
 
 </body>
 </html>
