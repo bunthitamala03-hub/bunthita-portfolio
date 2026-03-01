@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ผลงาน</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f0ff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #ab47bc;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            margin: auto;
+            width: 90%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .gallery {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ผลงาน</h1>
+</header>
+
+<nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="page2.html">ประวัติส่วนตัว</a>
+    <a href="page3.html">ประวัติการศึกษา</a>
+    <a href="page4.html">ผลการเรียน</a>
+    <a href="page5.html">ผลงาน</a>
+    <a href="page6.html">กิจกรรม</a>
+    <a href="page7.html">จิตอาสา</a>
+    <a href="page8.html">เหตุผลที่อยากเรียน</a>
+    <a href="page9.html">แรงบันดาลใจ</a>
+    <a href="page10.html">ภาคผนวก</a>
+</nav>
+
+<section>
+    <div class="box">
+        <h2>ผลงานของฉัน</h2>
+        <p></p>
+
+        <input type="file" accept="image/*" multiple onchange="previewImages(event)">
+
+        <div class="gallery" id="gallery"></div>
+
+    </div>
+</section>
+
+<footer>
+    © 2571 พอร์ตโฟลิโอของฉัน
+</footer>
+
+<script>
+function previewImages(event) {
+    const gallery = document.getElementById('gallery');
+    gallery.innerHTML = "";
+
+    const files = event.target.files;
+
+    for (let i = 0; i < files.length; i++) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const img = document.createElement("img");
+            img.src = e.target.result;
+            gallery.appendChild(img);
+        }
+        reader.readAsDataURL(files[i]);
+    }
+}
+</script>
+
+</body>
+</html>
